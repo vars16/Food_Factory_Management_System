@@ -8,7 +8,7 @@ The Food Factory Management System (FFMS) is a web-based application designed to
 Food factories often rely on manual records or disconnected tools to manage inventory and quality checks. This creates challenges in tracking ingredient expiry dates, enforcing safety inspections, maintaining batch traceability, and monitoring production status. FFMS addresses these issues by introducing a structured digital workflow that improves operational control and reduces the risk of human error.
 
 ## Target Users 
-- Inventory Supervisor – manages ingredient batches and stock levels  
+- Inventory Supervisor – manages ingredient batches and stock levels
 - Production Manager – plans and monitors production schedules  
 - Quality Inspector – performs and records safety inspections  
 - Shipping Clerk – handles dispatch of approved finished goods  
