@@ -52,3 +52,7 @@ To develop a centralized system that enforces food safety checkpoints, tracks in
 | Update finished goods inventory |  |  |  |
 | Dispatch only approved batches |  |  |  |
 | Secure role-based login |  |  |  |
+
+
+
+
