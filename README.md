@@ -36,3 +36,19 @@ To develop a centralized system that enforces food safety checkpoints, tracks in
 - Focus on process modeling rather than industrial automation  
 - Users have basic computer literacy and internet access  
 - Project completion within the academic timeline
+
+## MoSCoW Prioritization
+
+| Must Have | Should Have | Could Have | Won’t Have |
+|---|---|---|---|
+| Ingredient batch entry with expiry date | Near-expiry ingredient alerts | Generate basic reports | Barcode / QR code scanning |
+| View ingredient stock levels | View production batch status | View inspection history | Temperature sensor integration (cold chain) |
+| Create production schedule | Generate shipping label | Audit logs for activities | Mobile application support |
+| Check ingredient availability before scheduling | Dashboard for monitoring operations |  |  |
+| Approve production schedule | Search batch details |  |  |
+| Perform quality inspection for each batch |  |  |  |
+| Record inspection results |  |  |  |
+| Approve or reject batch |  |  |  |
+| Update finished goods inventory |  |  |  |
+| Dispatch only approved batches |  |  |  |
+| Secure role-based login |  |  |  |
