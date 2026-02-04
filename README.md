@@ -53,4 +53,10 @@ To develop a centralized system that enforces food safety checkpoints, tracks in
 | Dispatch only approved batches |  |  |  |
 | Secure role-based login |  |  |  |
 
-Update from feature-login-ui branch
+---
+
+### Update from feature-login-ui branch
+
+This line was added from the feature branch to demonstrate GitHub Flow.
+
+
