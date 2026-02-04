@@ -53,6 +53,77 @@ To develop a centralized system that enforces food safety checkpoints, tracks in
 | Dispatch only approved batches |  |  |  |
 | Secure role-based login |  |  |  |
 
+## Branching Strategy
+- The project adopts the GitHub Flow model for managing development
+- The main branch holds the latest stable version of the project
+- Separate feature branches are created from main for implementing new features
+- Feature branches are named using the format: feature-name (for example, feature-login-ui)
+- Changes are developed and tested in the feature branch before creating a Pull Request
+- After review, the feature branch is merged into the main branch
+- This workflow keeps development organized and maintains code reliability
+
+## Local Development Tools
+
+- **Frontend** – HTML with internal CSS is used to design the user interface for the Food Factory Management System, including login and dashboard screens.
+
+- **Backend** – Python with Flask framework is used to handle routing, request processing, and core business logic of the system.
+
+- **Database** – MySQL is used for storing ingredient batches, production records, inspection results, shipment logs, and user details.
+
+- **Containerization** – Docker Desktop is used to run the backend application in a containerized environment for easy local development.
+
+- **Version Control** – Git and GitHub are used to manage source code, branching, and project workflow.
+
+- **Development Environment** – Visual Studio Code is used as the code editor, and Windows Command Prompt / PowerShell is used to run development commands.
+
+- **Operating System** – Windows 10 / Windows 11
+
+## Quick Start – Local Development
+
+Follow these steps to run the Food Factory Management System on your local machine using Docker.
+
+
+### Prerequisites
+
+- Install Docker Desktop
+- Install Git
+- Web Browser (Chrome/Edge/Firefox)
+
+### Step 1 – Clone the repository
+
+```
+git clone https://github.com/vars16/Food_Factory_Management_System.git
+cd Food_Factory_Management_System
+```
+
+### Step 2 – Navigate to backend folder
+
+```
+cd backend
+```
+
+### Step 3 – Build Docker image
+
+```
+docker build -t ffms-backend .
+```
+
+### Step 4 – Run Docker container
+
+```
+docker run -p 5000:5000 ffms-backend
+```
+
+### Step 5 – Open in browser
+
+Open your browser and go to:
+
+```
+http://127.0.0.1:5000
+```
+
+The Food Factory Management System should now be running successfully on your local machine.
+
 
 
 
