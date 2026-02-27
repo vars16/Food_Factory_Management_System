@@ -78,6 +78,17 @@ To develop a centralized system that enforces food safety checkpoints, tracks in
 
 - **Operating System** – Windows 10 / Windows 11
 
+## Software Design
+
+The Food Factory Management System follows a layered client–server architecture
+with modular backend services for inventory, production, quality inspection, and
+shipping. The design emphasizes high cohesion and low coupling by separating
+core functionalities into independent modules. This approach improves system
+maintainability, scalability, and ease of future enhancements.
+
+### Architecture Diagram
+<img width="932" height="729" alt="image" src="https://github.com/user-attachments/assets/e3ff69ac-0dc2-4b7a-b479-2dce39dbcdc1" />
+
 ## Quick Start – Local Development
 
 Follow these steps to run the Food Factory Management System on your local machine using Docker.
