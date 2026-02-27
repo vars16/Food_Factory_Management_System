@@ -91,18 +91,25 @@ maintainability, scalability, and ease of future enhancements.
 
 ### Design Artifacts
 
-- Architecture Diagram: design/System_archi_diagram_(draw.io).png
-- ER Diagram: diagrams/erd.jpeg
-- Use Case Diagram: diagrams/use_case_diagram.png
-- Activity Diagram: diagrams/Activity_diagram.png
+- **Architecture Diagram:**  
+  [View Diagram](design/System_archi_diagram_(draw.io).png)
 
-- UI Wireframes:
-  - design/Figma - Login screen.png
-  - design/Figma - Inventory dashboard screen.png
-  - design/Figma - Production Schedule Screen.png
-  - design/Figma - Quality Inspection screen.png
-  - design/Figma - Shipping & Dispatch Screen.png
-  - design/Figma - Admin Pannel Screen.png
+- **ER Diagram:**  
+  [View Diagram](diagrams/erd.jpeg)
+
+- **Use Case Diagram:**  
+  [View Diagram](diagrams/use_case_diagram.png)
+
+- **Activity Diagram:**  
+  [View Diagram](diagrams/Activity_diagram.png)
+
+- **UI Wireframes:**
+  - [Login Screen](design/Figma - Login screen.png)
+  - [Inventory Dashboard](design/Figma - Inventory dashboard screen.png)
+  - [Production Schedule](design/Figma - Production Schedule Screen.png)
+  - [Quality Inspection](design/Figma - Quality Inspection screen.png)
+  - [Shipping & Dispatch](design/Figma - Shipping & Dispatch Screen.png)
+  - [Admin Panel](design/Figma - Admin Panel Screen.png)
 
 ## Quick Start – Local Development
 
