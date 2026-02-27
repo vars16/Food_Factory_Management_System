@@ -95,13 +95,13 @@ maintainability, scalability, and ease of future enhancements.
   [View Diagram](design/System_archi_diagram_(draw.io).png)
 
 - **ER Diagram:**  
-  [View Diagram](diagrams/erd.jpeg)
+  [View Diagram](design/ER_diag.jpeg)
 
 - **Use Case Diagram:**  
-  [View Diagram](diagrams/use_case_diagram.png)
+  [View Diagram](design/use_case_diagram.png)
 
 - **Activity Diagram:**  
-  [View Diagram](diagrams/Activity_diagram.png)
+  [View Diagram](design/Activity_diagram.png)
 
 - **UI Wireframes:**
   - [Login Screen](design/Figma_Login_screen.png)
