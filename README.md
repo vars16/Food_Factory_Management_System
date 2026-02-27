@@ -89,6 +89,21 @@ maintainability, scalability, and ease of future enhancements.
 ### Architecture Diagram
 <img width="932" height="729" alt="image" src="https://github.com/user-attachments/assets/e3ff69ac-0dc2-4b7a-b479-2dce39dbcdc1" />
 
+### Design Artifacts
+
+- Architecture Diagram: design/System_archi_diagram_(draw.io).png
+- ER Diagram: diagrams/erd.jpeg
+- Use Case Diagram: diagrams/use_case_diagram.png
+- Activity Diagram: diagrams/Activity_diagram.png
+
+- UI Wireframes:
+  - design/Figma - Login screen.png
+  - design/Figma - Inventory dashboard screen.png
+  - design/Figma - Production Schedule Screen.png
+  - design/Figma - Quality Inspection screen.png
+  - design/Figma - Shipping & Dispatch Screen.png
+  - design/Figma - Admin Pannel Screen.png
+
 ## Quick Start – Local Development
 
 Follow these steps to run the Food Factory Management System on your local machine using Docker.
