@@ -104,12 +104,12 @@ maintainability, scalability, and ease of future enhancements.
   [View Diagram](diagrams/Activity_diagram.png)
 
 - **UI Wireframes:**
-  - [Login Screen](design/Figma - Login screen.png)
-  - [Inventory Dashboard](design/Figma - Inventory dashboard screen.png)
-  - [Production Schedule](design/Figma - Production Schedule Screen.png)
-  - [Quality Inspection](design/Figma - Quality Inspection screen.png)
-  - [Shipping & Dispatch](design/Figma - Shipping & Dispatch Screen.png)
-  - [Admin Panel](design/Figma - Admin Panel Screen.png)
+  - [Login Screen](design/Figma_Login_screen.png)
+  - [Inventory Dashboard](design/Figma_Inventory_dashboard_screen.png)
+  - [Production Schedule](design/Figma_Production_Schedule_Screen.png)
+  - [Quality Inspection](design/Figma_Quality_Inspection_screen.png)
+  - [Shipping & Dispatch](design/Figma_Shipping_Dispatch_Screen.png)
+  - [Admin Panel](design/Figma_Admin_Panel_Screen.png)
 
 ## Quick Start – Local Development
 
