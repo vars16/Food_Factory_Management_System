@@ -1,0 +1,21 @@
+# Python cache
+__pycache__/
+
+# Environment files
+.env
+venv/
+
+# Node dependencies
+node_modules/
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor settings
+.vscode/
+.idea/
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>FFMS Login</title>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body{
+        height:100vh;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        background:#e9f8ef;
+    }
+
+    .login-card{
+        width:380px;
+        background:#ffffff;
+        padding:35px 30px;
+        border-radius:16px;
+        box-shadow:0 10px 25px rgba(0,0,0,0.08);
+        text-align:center;
+    }
+
+    .icon-circle{
+        width:70px;
+        height:70px;
+        background:#d8f3dc;
+        border-radius:50%;
+        margin:0 auto 15px;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        font-size:30px;
+        color:#2d6a4f;
+    }
+
+    h1{
+        font-size:24px;
+        margin-bottom:5px;
+        color:#1b4332;
+    }
+
+    .subtitle{
+        font-size:14px;
+        color:#6c757d;
+        margin-bottom:25px;
+    }
+
+    .input-group{
+        margin-bottom:18px;
+        text-align:left;
+    }
+
+    .input-group input{
+        width:100%;
+        padding:12px 14px;
+        border:1px solid #dcdcdc;
+        border-radius:8px;
+        font-size:14px;
+        outline:none;
+        transition:0.2s;
+    }
+
+    .input-group input:focus{
+        border-color:#40916c;
+        box-shadow:0 0 0 2px rgba(64,145,108,0.15);
+    }
+
+    .login-btn{
+        width:100%;
+        padding:12px;
+        border:none;
+        border-radius:8px;
+        background:#1b7f5f;
+        color:white;
+        font-size:15px;
+        cursor:pointer;
+        transition:0.2s;
+        margin-top:8px;
+    }
+
+    .login-btn:hover{
+        background:#146c50;
+    }
+
+    .forgot{
+        margin-top:15px;
+        font-size:13px;
+        color:#6c757d;
+        text-decoration:none;
+        display:block;
+    }
+
+    .footer{
+        margin-top:18px;
+        font-size:12px;
+        color:#8a8a8a;
+    }
+</style>
+</head>
+<body>
+
+<div class="login-card">
+    <div class="icon-circle">🏭</div>
+
+    <h1>FFMS Login</h1>
+    <div class="subtitle">Food Factory Management System</div>
+
+    <div class="input-group">
+        <input type="text" placeholder="Username">
+    </div>
+
+    <div class="input-group">
+        <input type="password" placeholder="Password">
+    </div>
+
+    <button class="login-btn">Login</button>
+
+    <a href="#" class="forgot">Forgot your password?</a>
+
+    <div class="footer">
+        © 2026 Food Factory Management System. All rights reserved.
+    </div>
+</div>
+
+</body>
+</html>
