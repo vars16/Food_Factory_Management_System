@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login - FFMS</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body class="login-page">
+  <div class="login-card">
+    <div class="login-icon">&#128992;</div>
+    <h1>FFMS Login</h1>
+    <p class="subtitle">Food Factory Management System</p>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}<div class="alert">{{ messages[0] }}</div>{% endif %}
+    {% endwith %}
+    <form method="POST">
+      <input type="text" name="username" placeholder="Username" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+    </form>
+    <p class="hint">Try: admin/admin123 · inventory/inv123 · inspector/qc123</p>
+  </div>
+  <footer>© 2026 Food Factory Management System. All rights reserved.</footer>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head><title>Quality Inspection - FFMS</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+  <nav class="topnav">
+    <span class="brand">Food Factory Management System</span>
+    <a href="/inventory">Inventory</a>
+    <a href="/production">Production</a>
+    <a href="/inspection" class="active">Inspection</a>
+    <a href="/shipping">Shipping</a>
+    <a href="/admin">Admin</a>
+    <a href="/logout">Logout ({{ role }})</a>
+  </nav>
+  <div class="page-bg-light">
+    <div class="container">
+      <h2 class="page-title">&#128737; Quality Inspection</h2>
+      {% for b in batches %}
+      <div class="card inspection-card">
+        <div class="card-header">
+          <span class="green-label">Batch Details</span>
+        </div>
+        <div class="detail-grid">
+          <div><small>Batch Number</small><strong>{{ b.batch_no }}</strong></div>
+          <div><small>Product Name</small><strong>{{ b.product }}</strong></div>
+          <div><small>Production Date</small><strong>{{ b.date }}</strong></div>
+          <div><small>Quantity</small><strong>{{ b.quantity }}</strong></div>
+          <div><small>Ingredients Used</small><strong>{{ b.ingredients_used }}</strong></div>
+        </div>
+        <div class="action-row">
+          <a href="/inspect/{{ b.id }}/reject" class="btn-danger">&#10005; Reject Batch</a>
+          <a href="/inspect/{{ b.id }}/approve" class="btn-success">&#10003; Approve Batch</a>
+        </div>
+      </div>
+      {% else %}
+      <div class="card"><p class="empty">No batches pending inspection.</p></div>
+      {% endfor %}
+    </div>
+  </div>
+</body>
+</html>

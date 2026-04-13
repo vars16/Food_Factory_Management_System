@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head><title>Shipping - FFMS</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+  <nav class="topnav">
+    <span class="brand">Food Factory Management System</span>
+    <a href="/inventory">Inventory</a>
+    <a href="/production">Production</a>
+    <a href="/inspection">Inspection</a>
+    <a href="/shipping" class="active">Shipping</a>
+    <a href="/admin">Admin</a>
+    <a href="/logout">Logout ({{ role }})</a>
+  </nav>
+  <div class="page-header green-header-dark">
+    <div>
+      <h2>&#128666; Shipping & Dispatch</h2>
+      <p>Manage approved batches ready for shipment</p>
+    </div>
+  </div>
+  <div class="container">
+    <div class="card">
+      <table>
+        <tr><th>Batch Number</th><th>Product</th><th>Quantity</th><th>Date</th><th>Status</th><th>Action</th></tr>
+        {% for b in approved %}
+        <tr>
+          <td><strong>{{ b.batch_no }}</strong></td>
+          <td>{{ b.product }}</td>
+          <td>{{ b.quantity }}</td>
+          <td>{{ b.date }}</td>
+          <td><span class="badge green">&#9679; Approved</span></td>
+          <td><a href="/dispatch/{{ b.id }}" class="btn-primary small">Dispatch</a></td>
+        </tr>
+        {% endfor %}
+        {% for b in dispatched %}
+        <tr class="muted-row">
+          <td><strong>{{ b.batch_no }}</strong></td>
+          <td>{{ b.product }}</td>
+          <td>{{ b.quantity }}</td>
+          <td>{{ b.date }}</td>
+          <td><span class="badge gray">&#128666; Dispatched</span></td>
+          <td>—</td>
+        </tr>
+        {% endfor %}
+        {% if not approved and not dispatched %}
+        <tr><td colspan="6" class="empty">No approved batches to ship yet.</td></tr>
+        {% endif %}
+      </table>
+    </div>
+  </div>
+</body>
+</html>

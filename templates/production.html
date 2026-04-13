@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head><title>Production - FFMS</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+  <nav class="topnav">
+    <span class="brand">Food Factory Management System</span>
+    <a href="/inventory">Inventory</a>
+    <a href="/production" class="active">Production</a>
+    <a href="/inspection">Inspection</a>
+    <a href="/shipping">Shipping</a>
+    <a href="/admin">Admin</a>
+    <a href="/logout">Logout ({{ role }})</a>
+  </nav>
+  <div class="page-header green-header-dark">
+    <h2>Production Schedule</h2>
+    <button class="btn-white" onclick="document.getElementById('create-form').style.display='block'">+ Create Production Schedule</button>
+  </div>
+  <div class="container">
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}<div class="alert-banner">{{ messages[0] }}</div>{% endif %}
+    {% endwith %}
+    <div id="create-form" style="display:none" class="card mb">
+      <h3>New Batch</h3>
+      <form method="POST">
+        <div class="form-row">
+          <input name="product" placeholder="Product name" required>
+          <input name="quantity" placeholder="Quantity (e.g. 500 units)" required>
+          <input name="ingredients" placeholder="Ingredients used (comma separated)" required>
+          <button type="submit" class="btn-primary">Start Production</button>
+        </div>
+      </form>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <h3>Active Batches</h3>
+        <span class="badge green">Total: {{ batches|length }}</span>
+      </div>
+      <table>
+        <tr><th>Batch</th><th>Ingredients</th><th>Status</th><th>Date</th></tr>
+        {% for b in batches %}
+        <tr>
+          <td><span class="box-icon">&#128230;</span><strong>{{ b.batch_no }}</strong><br><small>{{ b.product }}</small></td>
+          <td>{{ b.ingredients_used }}</td>
+          <td><span class="status-badge {{ b.status|lower|replace(' ','') }}">{{ b.status }}</span></td>
+          <td>{{ b.date }}</td>
+        </tr>
+        {% else %}
+        <tr><td colspan="4" class="empty">No batches yet.</td></tr>
+        {% endfor %}
+      </table>
+    </div>
+  </div>
+</body>
+</html>

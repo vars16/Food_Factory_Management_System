@@ -1,0 +1,96 @@
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', sans-serif; }
+body { background: #f0faf5; color: #1a1a1a; }
+
+/* Nav */
+.topnav { background: #1a6b3c; padding: 10px 24px; display: flex; align-items: center; gap: 16px; }
+.topnav .brand { color: #fff; font-weight: 600; margin-right: auto; }
+.topnav a { color: #c8f0dc; text-decoration: none; font-size: 14px; padding: 4px 10px; border-radius: 4px; }
+.topnav a.active, .topnav a:hover { background: rgba(255,255,255,0.2); color: #fff; }
+
+/* Headers */
+.page-header { padding: 28px 40px; display: flex; align-items: center; gap: 16px; }
+.green-header { background: #fff; border-bottom: 2px solid #e0f5ea; }
+.green-header-dark { background: #1a6b3c; color: #fff; justify-content: space-between; }
+.green-header-dark h2, .green-header-dark p { color: #fff; }
+.admin-header { background: #1a6b3c; color: #fff; flex-direction: column; align-items: flex-start; }
+.admin-header h2, .admin-header p { color: #fff; }
+.header-icon { font-size: 32px; background: #e0f5ea; padding: 12px; border-radius: 12px; }
+.page-title { margin: 24px 40px 16px; font-size: 20px; color: #1a6b3c; }
+
+/* Container */
+.container { max-width: 1100px; margin: 24px auto; padding: 0 24px; }
+.two-col { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+.mb { margin-bottom: 16px; }
+.page-bg-light { background: #f0faf5; min-height: 100vh; }
+
+/* Card */
+.card { background: #fff; border-radius: 12px; padding: 24px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+.card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+.card-header h3 { font-size: 16px; }
+
+/* Table */
+table { width: 100%; border-collapse: collapse; font-size: 14px; }
+th { text-align: left; padding: 10px 12px; border-bottom: 2px solid #e8f5ee; color: #666; font-size: 12px; text-transform: uppercase; letter-spacing: .5px; }
+td { padding: 12px; border-bottom: 1px solid #f0f0f0; }
+.muted { color: #888; font-size: 13px; }
+.muted-row td { opacity: 0.6; }
+.empty { text-align: center; color: #aaa; padding: 24px; }
+
+/* Buttons */
+.btn-primary { background: #1a6b3c; color: #fff; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 14px; text-decoration: none; display: inline-block; }
+.btn-primary:hover { background: #145530; }
+.btn-primary.small { padding: 5px 12px; font-size: 12px; }
+.btn-white { background: #fff; color: #1a6b3c; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-size: 14px; }
+.btn-danger { background: #e53935; color: #fff; padding: 12px 32px; border-radius: 6px; text-decoration: none; font-size: 15px; }
+.btn-success { background: #1a6b3c; color: #fff; padding: 12px 32px; border-radius: 6px; text-decoration: none; font-size: 15px; }
+
+/* Badges */
+.badge { padding: 3px 10px; border-radius: 20px; font-size: 12px; font-weight: 500; }
+.badge.green { background: #e0f5ea; color: #1a6b3c; }
+.badge.orange { background: #fff3e0; color: #e65100; }
+.badge.gray { background: #f0f0f0; color: #555; }
+.dot { display: inline-block; width: 8px; height: 8px; border-radius: 50%; margin-right: 6px; }
+.dot.green { background: #1a6b3c; }
+.status-badge { padding: 3px 10px; border-radius: 20px; font-size: 12px; }
+.status-badge.inprogress { background: #e3f2fd; color: #1565c0; }
+.status-badge.approved { background: #e0f5ea; color: #1a6b3c; }
+.status-badge.rejected { background: #ffebee; color: #b71c1c; }
+.status-badge.dispatched { background: #f3e5f5; color: #6a1b9a; }
+
+/* Forms */
+.form-row { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.form-row input { padding: 8px 12px; border: 1px solid #ddd; border-radius: 6px; font-size: 14px; flex: 1; min-width: 140px; }
+
+/* Login */
+.login-page { display: flex; flex-direction: column; align-items: center; justify-content: center; min-height: 100vh; }
+.login-card { background: #fff; border-radius: 16px; padding: 40px 36px; width: 380px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center; }
+.login-icon { font-size: 36px; background: #e0f5ea; width: 64px; height: 64px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; }
+.login-card h1 { font-size: 22px; margin-bottom: 4px; }
+.login-card .subtitle { color: #888; margin-bottom: 24px; }
+.login-card input { width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 8px; margin-bottom: 12px; font-size: 15px; }
+.login-card button { width: 100%; padding: 12px; background: #1a6b3c; color: #fff; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; }
+.hint { color: #aaa; font-size: 12px; margin-top: 16px; }
+footer { color: #aaa; font-size: 12px; margin-top: 24px; }
+
+/* Inspection */
+.inspection-card { margin-bottom: 20px; }
+.green-label { color: #1a6b3c; font-weight: 600; }
+.detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 16px 0; }
+.detail-grid small { display: block; color: #888; font-size: 12px; margin-bottom: 2px; }
+.action-row { display: flex; gap: 12px; margin-top: 16px; }
+
+/* Alert */
+.alert { background: #ffebee; color: #b71c1c; padding: 10px; border-radius: 6px; margin-bottom: 12px; }
+.alert-banner { background: #fff3e0; color: #e65100; padding: 12px 16px; border-radius: 8px; margin-bottom: 16px; border-left: 4px solid #e65100; }
+.alert-card { background: #fffbf0; border: 1px solid #ffe082; }
+.alert-card h3 { color: #e65100; margin-bottom: 4px; }
+.alert-item { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid #f0ead0; }
+
+/* Admin stats */
+.stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 20px; }
+.stat-card { background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.06); }
+.stat-num { font-size: 28px; font-weight: 700; color: #1a6b3c; }
+.stat-card.green .stat-num { color: #1a6b3c; }
+.box-icon { font-size: 16px; margin-right: 6px; }
+.log-item { display: flex; gap: 12px; padding: 8px 0; border-bottom: 1px solid #f0f0f0; font-size: 13px; }
+.log-time { color: #1a6b3c; font-weight: 600; min-width: 40px; }

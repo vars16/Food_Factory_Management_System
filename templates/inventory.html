@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head><title>Inventory - FFMS</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+  {% include 'nav.html' ignore missing %}
+  <nav class="topnav">
+    <span class="brand">Food Factory Management System</span>
+    <a href="/inventory" class="active">Inventory</a>
+    <a href="/production">Production</a>
+    <a href="/inspection">Inspection</a>
+    <a href="/shipping">Shipping</a>
+    <a href="/admin">Admin</a>
+    <a href="/logout">Logout ({{ role }})</a>
+  </nav>
+  <div class="page-header green-header">
+    <div class="header-icon">&#128230;</div>
+    <div>
+      <h2>Inventory Dashboard</h2>
+      <p>Manage your food factory ingredients</p>
+    </div>
+  </div>
+  <div class="container two-col">
+    <div class="card">
+      <div class="card-header">
+        <h3>Current Inventory</h3>
+        <button class="btn-primary" onclick="document.getElementById('add-form').style.display='block'">+ Add Ingredient Batch</button>
+      </div>
+      <div id="add-form" style="display:none;background:#f0faf5;padding:16px;border-radius:8px;margin-bottom:16px">
+        <form method="POST">
+          <div class="form-row">
+            <input name="name" placeholder="Ingredient name" required>
+            <input name="quantity" type="number" placeholder="Quantity" required>
+            <input name="unit" placeholder="Unit (kg/L)" required>
+            <input name="expiry" type="date" required>
+            <button type="submit" class="btn-primary">Add</button>
+          </div>
+        </form>
+      </div>
+      <table>
+        <tr><th>Ingredient</th><th>Batch No</th><th>Expiry Date</th><th>Quantity</th></tr>
+        {% for i in ingredients %}
+        <tr>
+          <td><span class="dot green"></span>{{ i.name }}</td>
+          <td class="muted">{{ i.batch_no }}</td>
+          <td>{{ i.expiry }}</td>
+          <td><strong>{{ i.quantity }} {{ i.unit }}</strong></td>
+        </tr>
+        {% else %}
+        <tr><td colspan="4" class="empty">No ingredients yet. Add some above.</td></tr>
+        {% endfor %}
+      </table>
+    </div>
+    <div class="card alert-card">
+  <h3>&#9888; Near Expiry Alerts</h3>
+  <p class="muted">Items requiring attention</p>
+  {% for i in near_expiry %}
+  <div class="alert-item">
+    <strong>{{ i.name }}</strong>
+    <span class="badge {% if i.days_left <= 30 %}red{% else %}orange{% endif %}">
+      {{ i.days_left }} days left
+    </span>
+  </div>
+  {% else %}
+  <p class="empty">No items expiring soon</p>
+  {% endfor %}
+  <button class="btn-primary" style="width:100%;margin-top:12px">View All Alerts</button>
+</div>
+  </div>
+</body>
+</html>

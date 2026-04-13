@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head><title>Admin - FFMS</title><link rel="stylesheet" href="/static/style.css"></head>
+<body>
+  <nav class="topnav">
+    <span class="brand">Food Factory Management System</span>
+    <a href="/inventory">Inventory</a>
+    <a href="/production">Production</a>
+    <a href="/inspection">Inspection</a>
+    <a href="/shipping">Shipping</a>
+    <a href="/admin" class="active">Admin</a>
+    <a href="/logout">Logout</a>
+  </nav>
+  <div class="page-header admin-header">
+    <h2>Admin Panel</h2>
+    <p>Food Factory Management System</p>
+  </div>
+  <div class="container stats-row">
+    <div class="stat-card"><div class="stat-num">{{ users|length }}</div><div>Total Users</div></div>
+    <div class="stat-card"><div class="stat-num">{{ logs|length }}</div><div>System Logs</div></div>
+    <div class="stat-card green"><div class="stat-num">98.5%</div><div>System Health</div></div>
+  </div>
+  <div class="container two-col">
+    <div class="card">
+      <h3>&#128101; Manage Users</h3>
+      <table>
+        <tr><th>Username</th><th>Role</th></tr>
+        {% for u in users %}
+        <tr><td>{{ u.username }}</td><td><span class="badge green">{{ u.role }}</span></td></tr>
+        {% endfor %}
+      </table>
+    </div>
+    <div class="card">
+      <h3>&#128196; View Logs</h3>
+      {% for log in logs[-5:]|reverse %}
+      <div class="log-item">
+        <span class="log-time">{{ log.time }}</span>
+        <span>{{ log.msg }}</span>
+      </div>
+      {% else %}
+      <p class="empty">No activity yet.</p>
+      {% endfor %}
+    </div>
+  </div>
+</body>
+</html>
