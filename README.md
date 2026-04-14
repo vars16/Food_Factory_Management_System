@@ -108,7 +108,7 @@ maintainability, scalability, and ease of future enhancements.
   - [Inventory Dashboard](design/Figma_Inventory_dashboard_screen.png)
   - [Production Schedule](design/Figma_Production_Schedule_Screen.png)
   - [Quality Inspection](design/Figma_Quality_Inspection_screen.png)
-  - [Shipping & Dispatch](design/Figma_Shipping_Dispatch_Screen.png)
+  - [Shipping & Dispatch](https://github.com/vars16/Food_Factory_Management_System/blob/main/design/Figma_Shiping_Dispatch_Screen.png)
   - [Admin Panel](design/Figma_Admin_Panel_Screen.png)
 
 ## Quick Start – Local Development
