@@ -104,7 +104,7 @@ maintainability, scalability, and ease of future enhancements.
   [View Diagram](design/Activity_diagram.png)
 
 - **UI Wireframes:**
-  - [Login Screen](design/Figma_Login_screen.png)
+  - ![Login](../design/Figma_Login_screen.png)
   - [Inventory Dashboard](design/Figma_Inventory_dashboard_screen.png)
   - [Production Schedule](design/Figma_Production_Schedule_Screen.png)
   - [Quality Inspection](design/Figma_Quality_Inspection_screen.png)
