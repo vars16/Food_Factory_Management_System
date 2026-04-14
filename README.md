@@ -129,30 +129,16 @@ git clone https://github.com/vars16/Food_Factory_Management_System.git
 cd Food_Factory_Management_System
 ```
 
-### Step 2 – Navigate to backend folder
+### Step 2 – Run using Docker Compose
 
 ```
-cd backend
+docker-compose up --build
 ```
 
-### Step 3 – Build Docker image
+### Step 3 – Open in browser
 
 ```
-docker build -t ffms-backend .
-```
-
-### Step 4 – Run Docker container
-
-```
-docker run -p 5000:5000 ffms-backend
-```
-
-### Step 5 – Open in browser
-
-Open your browser and go to:
-
-```
-http://127.0.0.1:5000
+http://localhost:5000
 ```
 
 The Food Factory Management System should now be running successfully on your local machine.
