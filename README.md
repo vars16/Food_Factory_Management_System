@@ -104,7 +104,7 @@ maintainability, scalability, and ease of future enhancements.
   [View Diagram](design/Activity_diagram.png)
 
 - **UI Wireframes:**
-  - ![Login](../design/Figma_Login_screen.png)
+  - [Login](https://github.com/vars16/Food_Factory_Management_System/blob/main/design/Figma%20_Login_screen.png)
   - [Inventory Dashboard](design/Figma_Inventory_dashboard_screen.png)
   - [Production Schedule](design/Figma_Production_Schedule_Screen.png)
   - [Quality Inspection](design/Figma_Quality_Inspection_screen.png)
